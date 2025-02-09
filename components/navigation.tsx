@@ -10,7 +10,7 @@ interface NavigationProps {
 
 export function Navigation({ activeTab, onTabChange }: NavigationProps) {
   return (
-    <div className="p-1 bg-[#1A1E23] dark:bg-gray-800 rounded-lg max-w-[300px] mx-auto">
+    <div className="p-1 bg-[#1A1E23] dark:bg-gray-800 rounded-lg max-w-[400px] mx-auto">
       <div className="flex">
         <button
           onClick={() => onTabChange("portfolio")}
@@ -19,7 +19,16 @@ export function Navigation({ activeTab, onTabChange }: NavigationProps) {
             activeTab === "portfolio" ? "bg-white text-black dark:bg-gray-200" : "text-gray-400 hover:text-white",
           )}
         >
-          Portfolio
+          Projects
+        </button>
+        <button
+          onClick={() => onTabChange("about")}
+          className={cn(
+            "flex-1 px-6 py-2 text-sm font-medium rounded-md transition-all",
+            activeTab === "about" ? "bg-white text-black dark:bg-gray-200" : "text-gray-400 hover:text-white",
+          )}
+        >
+          About Me
         </button>
         <button
           onClick={() => onTabChange("skills")}
@@ -30,6 +39,7 @@ export function Navigation({ activeTab, onTabChange }: NavigationProps) {
         >
           Skills
         </button>
+       
       </div>
     </div>
   )
