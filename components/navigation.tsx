@@ -21,15 +21,7 @@ export function Navigation({ activeTab, onTabChange }: NavigationProps) {
         >
           Projects
         </button>
-        <button
-          onClick={() => onTabChange("about")}
-          className={cn(
-            "flex-1 px-6 py-2 text-sm font-medium rounded-md transition-all",
-            activeTab === "about" ? "bg-white text-black dark:bg-gray-200" : "text-gray-400 hover:text-white",
-          )}
-        >
-          About Me
-        </button>
+        
         <button
           onClick={() => onTabChange("skills")}
           className={cn(

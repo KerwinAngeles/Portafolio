@@ -1,14 +1,11 @@
 "use client"
 
-import { Settings } from "lucide-react"
 import { useState } from "react"
 import { ProfileHeader } from "@/components/profile-header"
-import { Stats } from "@/components/stats"
 import { Actions } from "@/components/actions"
 import { Navigation } from "@/components/navigation"
 import { Portfolio } from "@/components/portfolio"
 import { Skills } from "@/components/skills"
-import { About} from "@/components/about"
 import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function Page() {
@@ -35,8 +32,6 @@ export default function Page() {
 
         {activeTab === "portfolio" ? (
           <Portfolio />
-        ) : activeTab === "about" ? (
-          <About />
         ) : (
           <Skills />
         )}

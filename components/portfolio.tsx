@@ -30,6 +30,27 @@ const projects = [
     bgColor: "bg-gray-100",
     link: "https://management-system-kerwin.vercel.app/"
   },
+  {
+    title: "Task Managment",
+    description: "A Task management system when you can create, edit, delete task.",
+    image: "/TaskManagment.png",
+    bgColor: "bg-gray-100",
+    link: "https://github.com/KerwinAngeles/TaskManagement?tab=readme-ov-file"
+  },
+  {
+    title: "Employ System",
+    description: "An employability system where you can find jobs, create jobs, and notice when the company publish a job.",
+    image: "/linkdingSystem.png",
+    bgColor: "bg-gray-100",
+    link: "https://github.com/KerwinAngeles/EmployabilitySystem"
+  },
+  {
+    title: "Patient System",
+    description: "A system when you can managment all the function an a hospital.",
+    image: "/PatientSystem.png",
+    bgColor: "bg-gray-100",
+    link: "https://github.com/KerwinAngeles/EmployabilitySystem"
+  },
 ]
 
 export function Portfolio() {
